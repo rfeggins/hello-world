@@ -1,27 +1,38 @@
 # Overview
 Sample repository 
 
-## Reference
-[Python Installation](http://flask.pocoo.org/docs/1.0/installation/)
+## References
+a. [Python Installation](http://flask.pocoo.org/docs/1.0/installation/)
+b. [Create environment](http://flask.pocoo.org/docs/1.0/installation/#install-create-env)
 
 In this tutorial we will be using the Python 3.4, Flask and setup a virtual 
 environment to manage the dependencies.
 
 ## Virtual environments
-The more Python projects you have, the more likely they will require to use different Python libraries versions, or even Python itself for different projects
+The more Python projects you have, the more likely they will require to use different Python libraries versions, or even Python itself for different projects.  Virtual environments allow teams to set up independent groups of Python libraries that can be used for each project. Packages installed for one project will not affect other projects or the operating system’s packages.
 
-Virtual environments allow teams to set up independent groups of Python libraries that can be used for each project. Packages installed for one project will not affect other projects or the operating system’s packages.
-
+## Creating a Dev environment
 Python 3 comes bundled with the **venv** module to create virtual environments. If you’re using a modern version of Python, you can continue on to the next section.
 
-To use **venv** you need to create an environment
-
+1. To use **venv** you need to create an environment
 ```
 Create a project folder and a venv folder within:
 
 mkdir myproject
 cd myproject
 python3 -m venv venv
+```
+
+2. Activate the environment
+Before you work on your project, activate the corresponding environment:
+```
+. venv/bin/activate
+``
+
+3. Install Flask
+Within the activated environment, use the following command to install Flask:
+```
+pip install Flask
 ```
 
 
